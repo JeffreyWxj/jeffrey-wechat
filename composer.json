@@ -12,11 +12,13 @@
 	"minimum-stability": "dev",
 	"require": {
 		"php": ">=7.0",
-		"guzzlehttp/guzzle": "^6.2@dev"
+		"guzzlehttp/guzzle": "^6.2@dev",
+		"soapbox/laravel-formatter": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
-			"WxPay\\": "src/WxPay"
+			"WxPay\\": "src/WxPay",
+			"Api\\": "src/Api"
 		}
 	}
 }
