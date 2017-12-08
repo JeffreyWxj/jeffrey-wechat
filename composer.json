@@ -17,8 +17,11 @@
 	},
 	"autoload": {
 		"psr-4": {
+			"Api\\": "src/Api",
 			"WxPay\\": "src/WxPay",
-			"Api\\": "src/Api"
+			"WxApplet\\": "src/WxApplet",
+			"Conf\\": "src/Conf",
+			"Tools\\": "src/Tools"
 		}
 	}
 }
