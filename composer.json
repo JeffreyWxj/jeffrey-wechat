@@ -1,0 +1,21 @@
+{
+	"name": "jeffrey/jeffrey-wechat",
+	"description": "微信小程序/公众号开发所需API的集合",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jeffrey",
+			"email": "1737723363@qq.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=7.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"WxPay": "src/WxPay"
+		}
+	}
+}
