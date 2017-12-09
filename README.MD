@@ -19,7 +19,7 @@ $applet = new WxApplet(APP_ID, APP_SECRET);
 
 ### 获取OpenId/使用jscode获取登陆信息
 ```php
-$res = $applet->appletLogin("003rTMB32gxB2M07T5B32DKAB32rTMB1");
+$res = $applet->appletLogin("your_js_code");
 //res
 //array(3) { ["session_key"]=> string(24) "xxxxxx" ["expires_in"]=> int(7200) ["openid"]=> string(28) "xxxxxxxxxx" }
 ```
