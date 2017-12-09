@@ -5,6 +5,11 @@
 
 # 使用手册
 
+## 安装
+```
+composer require jeffrey/jeffrey-wechat
+```
+
 ## 微信小程序
 
 ### 实例化对象
