@@ -8,7 +8,6 @@
 
 namespace Tools;
 
-use Conf\WxConf;
 
 /**
  * 对结果生成签名
@@ -24,12 +23,12 @@ class SignTool
    * @param $key string 商户key
    * @return string sign字符串
    */
-  public static function make_sign($params)
+  public static function make_sign($params, $key)
   {
     ksort($params);
     $string = http_build_query($params);  //参数进行拼接key=value&k=v
     //签名步骤二：在string后加入KEY
-    $string = $string . "&key=" . WxConf::get('mch_key');
+    $string = $string . "&key=" . $key;
     //签名步骤三：MD5加密=>大写
     $result = strtoupper(md5($string));
     return $result;
