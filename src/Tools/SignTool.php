@@ -33,4 +33,5 @@ class SignTool
     $result = strtoupper(md5($string));
     return $result;
   }
+  
 }

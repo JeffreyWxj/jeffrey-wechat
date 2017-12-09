@@ -9,6 +9,8 @@
 
 namespace WxPay;
 
+use Tools\StringTool;
+
 class WxPay
 {
   private $appId;
@@ -115,8 +117,11 @@ class WxPay
   /**
    * 生成预支付订单
    */
-  public function unifiedOrder()
+  public function newUnifiedOrder()
   {
-    
+    $unifiedOrder = new UnifiedOrder();
+    $unifiedOrder->setAppId($this->getAppId());
+    $unifiedOrder->setMchId($this->getMchId());
+    return $unifiedOrder;
   }
 }
