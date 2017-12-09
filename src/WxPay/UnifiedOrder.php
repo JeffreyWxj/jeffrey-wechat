@@ -213,4 +213,12 @@ class UnifiedOrder
     $this->mchId = $mchId;
   }
   
+  /**
+   * 提交订单，返回prepay_id等参数
+   */
+  public function send()
+  {
+  
+  }
+  
 }

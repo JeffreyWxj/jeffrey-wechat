@@ -1,4 +1,4 @@
-# 微信小程序/公众号开发 API集成包
+# 微信小程序开发 API集成包
 
 > Developer：Jeffrey Wxj   
 > Desc：小白一枚，希望看到的大佬不吝赐教
@@ -28,6 +28,8 @@ $res = $applet->appletLogin("your_js_code");
 
 ### 实例化微信支付对象
 ```php
+use WxPay\WxPay;
+
 $wxPay = new WxPay();
 $wxPay->config([
   'appId' => APP_ID,
@@ -41,6 +43,8 @@ $wxPay->config([
 
 ### 统一下单接口
 ```php
+use Tools\StringTool;
+
 $unifiedOrder = $wxPay->newUnifiedOrder();
 $unifiedOrder->setBody('Body');
 $unifiedOrder->setDetail('Detail');
